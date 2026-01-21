@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sulop National High School - Senior High School</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #e0e7ff, #f9fafb);
+}
+
+/* HEADER */
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+header h1 {
+    margin: 15px 0 5px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* NAV */
+nav {
+    background: #2563eb;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+/* STRANDS */
+.strands {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.strand-box {
+    background: #eff6ff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* FORM */
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    width: 100%;
+}
+
+.full {
+    grid-column: span 2;
+}
+
+button {
+    background: #1e3a8a;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://scontent-mnl3-3.xx.fbcdn.net/v/t39.30808-6/510314865_122173899626343617_6019614232007399401_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG32eYA1MVIONmUsZ-fNWrGwX770DJy7JXBfvvQMnLslUPqA-0dTedPS_mv2N9IN_4S0jwZETuGAH_rFDuapg64&_nc_ohc=Q5JD00dX31EQ7kNvwGEwHXI&_nc_oc=Adlv28VRl_QdDKBROcNjCwke43ay6LWgLLJA1Rn5L4pUu3UGoD66JccTibCoh953Lss&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_gid=etshkQxZFSAxRktZ5okZUw&oh=00_Afo5qN2SQiS0V4Xn7uMNgaxx-eAhCd6c2Y5FxFeRNOQ6BA&oe=6973D39E">
+    </div>
+    <h1>Sulop National High School</h1>
+    <p>Senior High School | Entrance Exam & Enrollment Portal</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#strands">Strands</a>
+    <a href="#register">Register</a>
+</nav>
+
+<section id="about">
+    <h2>About Senior High School</h2>
+    <p>
+        Sulop National High School – Senior High School is committed to providing
+        quality education that prepares learners for higher education, employment,
+        and entrepreneurship. Incoming Grade 11 students are invited to register
+        for enrollment and entrance examination.
+    </p>
+</section>
+
+<section id="strands">
+    <h2>Offered Strands</h2>
+    <div class="strands">
+        <div class="strand-box">STEM</div>
+        <div class="strand-box">ABM</div>
+        <div class="strand-box">HUMSS</div>
+        <div class="strand-box">GAS</div>
+        <div class="strand-box">TVL</div>
+    </div>
+</section>
+
+<section id="register">
+    <h2>Entrance Exam / Enrollment Registration</h2>
+
+    <form onsubmit="submitForm(event)">
+        <div>
+            <label>First Name</label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <label>Last Name</label>
+            <input type="text" required>
+        </div>
+
+        <div>
+            <label>Middle Name</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" required>
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Contact Number</label>
+            <input type="tel" required>
+        </div>
+
+        <div class="full">
+            <label>Preferred Strand</label>
+            <select required>
+                <option value="">Select Strand</option>
+                <option>STEM</option>
+                <option>ABM</option>
+                <option>HUMSS</option>
+                <option>GAS</option>
+                <option>TVL</option>
+            </select>
+        </div>
+
+        <div class="full">
+            <button type="submit">Submit Registration</button>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Sulop National High School - Senior High School</p>
+</footer>
+
+<script>
+function submitForm(event) {
+    event.preventDefault();
+    alert("Registration Successful!\nPlease wait for the official announcement of the entrance exam schedule.");
+}
+</script>
+
+</body>
+</html>
